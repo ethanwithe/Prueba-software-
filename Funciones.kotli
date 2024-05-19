@@ -1,0 +1,29 @@
+package com.example.miprimeraapp
+
+class Funciones {
+    fun sumar(a: Int, b: Int): Int {
+        return a + b
+    }
+
+    fun restar(a: Int, b: Int): Int {
+        return a - b
+    }
+
+    fun multiplicar(a: Int, b: Int): Int {
+        return a * b
+    }
+
+    fun dividir(a: Int, b: Int): Int {
+        if (b == 0) throw IllegalArgumentException("División por cero no permitida")
+        return a / b
+    }
+
+    fun esPar(a: Int): Boolean {
+        return a % 2 == 0
+    }
+
+    fun calcularAreaTriangulo(base: Double, altura: Double): Double {
+        if (base < 0 || altura < 0) throw IllegalArgumentException("Base y altura deben ser no negativas")
+        return (base * altura) / 2
+    }
+}
